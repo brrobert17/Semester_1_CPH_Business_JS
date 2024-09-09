@@ -1,0 +1,13 @@
+{
+  "name": "semester_1_cph_business_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "utils.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
