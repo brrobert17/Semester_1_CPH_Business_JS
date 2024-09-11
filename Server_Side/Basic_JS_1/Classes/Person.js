@@ -1,4 +1,4 @@
-import {log} from "./ex1.js";
+import {log} from "../../../utils.js";
 
 export class Person {
     constructor(firstName, hobby) {
