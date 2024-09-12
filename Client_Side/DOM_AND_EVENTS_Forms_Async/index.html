@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="index.js" type="module" defer></script>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Ask Mr Duck</title>
+</head>
+<body>
+<div id="duck">
+    <h3 class="header">Ask Mr Duck</h3>
+    <div class="image-cont">
+        <img id="duck-img" src="rubber_duck.png" />
+    </div>
+    <button class="button" id="force-ask-button">FORCE ASK</button>
+    <a class="button" href="user_page/user.html">USER FORM</a>
+</div>
+
+<div class="main-div">
+    <div>
+        <h3>Write your problem to Mr. duck here</h3>
+        <input type="text" id="my-input">
+        <button id="my-button" class="button">ASK</button>
+    </div>
+    <div>
+        <h2>List of questions:</h2>
+        <ul id="my-list"></ul>
+        <p id="tooltip" class="tooltip">Happy to help</p>
+    </div>
+    <label>
+        FAQ
+        <select>
+            <option value="" disabled selected>Select a question...</option>
+            <option value="What'up?">What's up?</option>
+            <option value="All good?">All good?</option>
+            <option value="Is it gonna be okay?">Is it gonna be okay?</option>
+        </select>
+    </label>
+</div>
+</body>
+</html>

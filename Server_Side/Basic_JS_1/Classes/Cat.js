@@ -1,5 +1,6 @@
 export class Cat {
 
+    //private fields
     #name;
     #breed;
     #color;

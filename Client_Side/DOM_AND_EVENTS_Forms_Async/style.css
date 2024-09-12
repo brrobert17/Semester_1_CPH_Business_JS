@@ -1,0 +1,83 @@
+body {
+    background-color: rgba(115, 115, 115, 0.33);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#duck {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    font-size: 3.5em;
+    color: rgb(113, 44, 44);
+}
+
+
+.image-cont {
+    --size: 20em;
+    width: var(--size);
+    height: var(--size);
+    aspect-ratio: 1/1;
+}
+
+.image-cont img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-div,
+#duck {
+    --margin: 10em;
+    margin: 5em var(--margin);
+}
+
+.main-div {
+    color: rgb(113, 44, 44);
+    display: flex;
+    gap: 30em;
+}
+
+
+.button {
+    all: unset;
+    font-size: 0.8em;
+    background-color: rgb(113, 44, 44);
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+}
+
+
+.tooltip {
+    display: none;
+    background-color: rgb(55, 168, 24);
+    border-radius: 10px;
+    color: black;
+    position: fixed;
+    padding: 4px;
+}
+
+.visible {
+    display: unset;
+}
+
+li, img {
+    cursor: pointer;
+}
+
+
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button:hover {
+    background-color: rgb(162, 97, 97);
+    cursor: pointer;
+
+}

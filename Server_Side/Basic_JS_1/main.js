@@ -6,7 +6,7 @@ import {Student} from "./Classes/Student.js";
 
 // EXERCISES: FUNCTIONS & OBJECTS
 // ▪ Create a javascript function that takes firstname and lastname as 2 parameters and
-// uses console.log() to output the person's name. Check that it works and is printet
+// uses log() to output the person's name. Check that it works and is printet
 // correctly.
 // ▪ Create a function that calculates the area of a rectangle. The function should return
 // the result. Test that it works.
@@ -33,32 +33,53 @@ robertCalculator.writeFullName('Roberto', 'Baggio');
 
 log(robertCalculator.calculateRectangleArea(5, 9));
 log(`You have travelled ${(calculateTravel(200.5, 0.125)).toFixed(2)} kms with the Jag`);
+
 const person1 = new Person('Hans Henrik', 'fishing');
-
 person1.greet();
+
+// EXERCISE CLASS
+// ▪ Create a Cat class with name, color, breed.
+// 	▪ Create a constructor that takes 3 parameters to create an object with name, color,
+// 	breed.
+// 	▪ Create a function/method that returns the cat's data.
+// ▪ Create a function that can change the cat's name.
 const c1 = new Cat('Durmi', 'bastard', 'black');
-
+//test private field
 c1.name = 'not durmi';
-
-
-console.log(c1.getCat());
+log(c1.getCat());
 c1.setName('Cirmos');
+log(c1.getCat());
 
-console.log(c1.getCat());
+// EXERCISE CAR
+// ▪ Define the Car class:
+// ▪ Create a class named Car.
+// ▪ Add a constructor that accepts make, model, and year as parameters and initializes these
+// properties.
+// ▪ Add Methods:
+// 	▪ getCarInfo method: This method should return a string containing the car's make, model, and
+// year.
+// ▪ start method: This method should set a property called isRunning to true and return a
+// string indicating the car has started.
+// ▪ stop method: This method should set the isRunning property to false and return a string
+// indicating the car has stopped.
+// ▪ Create Instances and Test Methods:
+// 	▪ Create two instances of the Car class with different make, model, and year values.
+// ▪ Call the getCarInfo, start, and stop methods on these instances and print the results to verify
+// that everything works as expected.
 const car1 = new Car('Subaru', 'Legacy Outback', '1999');
-console.log(car1.getCarInfo());
-
+log(car1.getCarInfo());
 car1.start();
-console.log(car1.getCarInfo());
+log(car1.getCarInfo());
 car1.stop();
-console.log(car1.getCarInfo());
-const car2 = new Car('Datsun', 'Patrol', '1994');
-console.log(car2.getCarInfo());
+log(car1.getCarInfo());
 
+const car2 = new Car('Datsun', 'Patrol', '1994');
+log(car2.getCarInfo());
 car2.start();
-console.log(car2.getCarInfo());
+log(car2.getCarInfo());
 car2.stop();
-console.log(car2.getCarInfo());
+log(car2.getCarInfo());
+
 // EXERCISE: ARRAYS
 
 // ▪ Create an array with 5 names. Print out the first element (name) using console.log()
@@ -97,10 +118,6 @@ for (const obj of newArr2) {
 	}
 }
 log(newArr2[0].email);
-
-
-
-
 
 // EXERCISE ARRAYS & OBJECTS
 // ▪ Exercise: Student Grades Management

@@ -1,0 +1,23 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    gap: 2em;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+}
+.user-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.invalid-input {
+    outline: solid 1px #980606;
+}
+.valid-input {
+    outline: solid 1px #16a816;
+}
