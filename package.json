@@ -5,9 +5,15 @@
   "main": "utils.js",
   "type": "module",
   "scripts": {
+    "serve": "nodemon Server_Side/Node_JS_1/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0"
+  }
 }
